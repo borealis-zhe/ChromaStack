@@ -1,0 +1,73 @@
+{
+  "Filaments": [
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#ffffff",
+      "Name": "Jade White",
+      "Owned": false,
+      "Transmissivity": 5,
+      "Type": "PLA",
+      "uuid": "{29d0549f-7950-4e60-b9e5-aa081f71d61b}",
+      "FILAMENT_K": [0.0000, 0.0000, 0.0000],
+      "FILAMENT_S": [3.0791, 4.3921, 6.4903]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#000000",
+      "Name": "Black",
+      "Owned": false,
+      "Transmissivity": 0.6,
+      "Type": "PLA",
+      "uuid": "{43eb13d1-f422-4d84-9bce-37a0e10a2158}",
+      "FILAMENT_K": [30.9776, 31.0736, 30.4787],
+      "FILAMENT_S": [2.3232, 2.3114, 2.4704]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#0086d6",
+      "Name": "Cyan",
+      "Owned": false,
+      "Tags": [],
+      "Transmissivity": 3.5,
+      "Type": "PLA",
+      "uuid": "{843aefd0-878c-48b4-bbce-8fc5f1abfd11}",
+      "FILAMENT_K": [6.0078, 1.5025, 0.0000],
+      "FILAMENT_S": [1.2883, 2.8551, 5.4967]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#cd007b",
+      "Name": "Magenta",
+      "Owned": false,
+      "Tags": [],
+      "Transmissivity": 3,
+      "Type": "PLA",
+      "uuid": "{3100e0d4-45bf-4835-8637-517d55134e9d}",
+      "FILAMENT_K": [0.1785, 9.0465, 1.7782],
+      "FILAMENT_S": [3.4507, 2.4917, 4.9800]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#fec600",
+      "Name": "Sunflower Yellow",
+      "Owned": false,
+      "Tags": [],
+      "Transmissivity": 4.4,
+      "Type": "PLA",
+      "uuid": "{7e544771-d59b-439d-b589-965d15ddbae4}",
+      "FILAMENT_K": [0.0000, 0.0000, 17.7359],
+      "FILAMENT_S": [5.7579, 7.5846, 2.2397]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#9d432c",
+      "Name": "Brown",
+      "Owned": false,
+      "Transmissivity": 2,
+      "Type": "PLA",
+      "uuid": "{17ea47fa-6eb6-4109-911c-ea608f35cc85}",
+      "FILAMENT_K": [3.6116, 8.9167, 16.1001],
+      "FILAMENT_S": [1.5969, 1.4123, 1.2625]
+    }
+  ]
+}

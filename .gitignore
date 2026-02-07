@@ -1,0 +1,13 @@
+.vscode/
+__pycache__/
+
+*.3mf
+# *.stl
+
+output/
+debug_output/
+
+testpic/
+
+my_filament.json
+my_filament_PETG.json
