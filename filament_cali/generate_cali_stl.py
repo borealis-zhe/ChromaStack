@@ -16,7 +16,7 @@ NUM_STEPS = 5              # 测试 1~5 层
 START_LAYERS = 1           # 从第几层开始测
 
 # 输出目录
-OUTPUT_DIR = "fwoc8_calibration_stls"
+OUTPUT_DIR = "calibration_stls"
 if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
