@@ -104,7 +104,7 @@ class VirtualPhysics:
 
     def generate_lut_km(self, filaments_list):
         num_filaments = len(filaments_list) # <--- 获取动态数量
-        print(f"🤖 [K-M 引擎] 检测到 {num_filaments} 种耗材，正在计算光路混合...")
+        print(f" [K-M 引擎] 检测到 {num_filaments} 种耗材，正在计算光路混合...")
         
         Ks = np.array([f['FILAMENT_K'] for f in filaments_list])
         Ss = np.array([f['FILAMENT_S'] for f in filaments_list])
