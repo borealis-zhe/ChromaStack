@@ -36,7 +36,7 @@
 
 ### Step 0: Installation & Environment Setup
 
-Ensure your computer has Python 3.8+ installed. Open your terminal and run the following commands:
+Ensure your computer has Python 3.12+ installed. Open your terminal and run the following commands:
 
 ```bash
 # 1. Clone the repository
