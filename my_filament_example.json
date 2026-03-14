@@ -68,6 +68,24 @@
       "uuid": "{17ea47fa-6eb6-4109-911c-ea608f35cc85}",
       "FILAMENT_K": [3.6116, 8.9167, 16.1001],
       "FILAMENT_S": [1.5969, 1.4123, 1.2625]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#ff0000",
+      "Name": "Red",
+      "Owned": false,
+      "Type": "PLA",
+      "FILAMENT_K": [0.0693, 21.3743, 31.5290],
+      "FILAMENT_S": [1.4840, 1.7278, 1.9211]
+    },
+    {
+      "Brand": "BambuLab Basic",
+      "Color": "#808080",
+      "Name": "Gray",
+      "Owned": false,
+      "Type": "PLA",
+      "FILAMENT_K": [4.4993, 5.1961, 6.6193],
+      "FILAMENT_S": [4.5135, 5.9050, 7.9279]
     }
   ]
 }
