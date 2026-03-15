@@ -1,0 +1,11 @@
+{
+  "Filaments": [
+    {
+      "Brand": "Polymaker PolyTerra",
+      "Name": "哑光香蕉黄(Banana)",
+      "Type": "PLA",
+      "FILAMENT_K": [0.0000, 0.3112, 6.6037],
+      "FILAMENT_S": [4.5178, 5.2771, 3.4735]
+    }
+  ]
+}
