@@ -1,0 +1,16 @@
+# 3D打印耗材校准配置文件
+
+# 输入/输出设置
+image_path: '2026-02-14_044115.jpg'  # 校准图片路径
+
+# 3D打印/物理参数
+layer_height: 0.08                    # 打印层高 (mm)
+num_steps: 5                         # 色卡台阶数 (1层到5层)
+backing_reflectance_white: 0.94      # A4纸作为底材的反射率 (0.92-0.96)
+backing_reflectance_black: 0.00      # 黑底反射率 (假设完全吸光)
+
+# 图像处理参数
+a4_width: 1414                       # A4纸透视变换后的宽度 (像素)
+a4_height: 1000                      # A4纸透视变换后的高度
+chip_w: 400                          # 色卡透视变换后的宽度
+chip_h: 500                          # 色卡透视变换后的高度

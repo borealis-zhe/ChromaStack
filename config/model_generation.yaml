@@ -1,0 +1,14 @@
+alpha_threshold: 128
+color_count: 4
+fixed_base_slot: CooBeen-白
+image_height: 400
+image_width: 400
+is_double_sided: false
+layer_height: 0.08
+min_pixel_size: 5
+model_depth: 0.8
+model_height: 80
+model_width: 80
+pixel_size: 0.2
+scale: 10
+sigma: 0.5

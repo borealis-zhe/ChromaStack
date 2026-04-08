@@ -102,7 +102,7 @@ class VirtualPhysics:
         R = numerator / denominator
         return np.clip(R, 0, 1)
 
-    def generate_lut_km(self, filaments_list):
+    def generate_lut_km(self, filaments_list, total_layers=TOTAL_LAYERS, layer_height=LAYER_HEIGHT):
         num_filaments = len(filaments_list) # <--- 获取动态数量
         print(f" [K-M 引擎] 检测到 {num_filaments} 种耗材，正在计算光路混合...")
         
@@ -110,17 +110,17 @@ class VirtualPhysics:
         Ss = np.array([f['FILAMENT_S'] for f in filaments_list])
         
         # ⚠️ 动态生成组合索引：range(num_filaments) 而不是 range(4)
-        indices = np.array(list(itertools.product(range(num_filaments), repeat=TOTAL_LAYERS)))
+        indices = np.array(list(itertools.product(range(num_filaments), repeat=total_layers)))
         num_combos = len(indices)
         
-        print(f"  > 组合总数: {num_filaments}^{TOTAL_LAYERS} = {num_combos}")
+        print(f"  > 组合总数: {num_filaments}^{total_layers} = {num_combos}")
         
         current_R = np.tile(BACKING_REFLECTANCE, (num_combos, 1))
-        for layer_idx in range(TOTAL_LAYERS):
+        for layer_idx in range(total_layers):
             filament_ids = indices[:, layer_idx] 
             layer_K = Ks[filament_ids]
             layer_S = Ss[filament_ids]
-            current_R = self.km_reflectance_vectorized(layer_K, layer_S, LAYER_HEIGHT, current_R)
+            current_R = self.km_reflectance_vectorized(layer_K, layer_S, layer_height, current_R)
         
         lut_colors_srgb = self.linear_to_srgb_bytes(current_R)
         return lut_colors_srgb, indices
@@ -517,7 +517,7 @@ def main():
     
     # 3. K-M 物理计算
     engine = VirtualPhysics()
-    lut_colors, lut_indices_map = engine.generate_lut_km(selected_filaments)
+    lut_colors, lut_indices_map = engine.generate_lut_km(selected_filaments, TOTAL_LAYERS, LAYER_HEIGHT)
     
     visualize_gamut(lut_colors)
     print("\n" + "="*50)
