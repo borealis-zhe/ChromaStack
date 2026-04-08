@@ -1,0 +1,11 @@
+{
+  "Filaments": [
+    {
+      "Brand": "兰博",
+      "Name": "Skin",
+      "Type": "PETG",
+      "FILAMENT_K": [0.0000, 0.1065, 0.6421],
+      "FILAMENT_S": [2.2628, 2.5009, 2.8952]
+    }
+  ]
+}
